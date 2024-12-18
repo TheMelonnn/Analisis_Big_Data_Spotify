@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="Assets/StoryBoard.jpg" alt="Storyboard" height="80">
+    <img src="Assets/StoryBoard.jpg" alt="Storyboard" height="300">
   </a>
   <br/>
   <h3 align="center">
