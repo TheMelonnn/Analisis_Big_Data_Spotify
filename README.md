@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="https://github.com/SPARC-FAIR-Codeathon/KnowMore/blob/main/docs/kmlogo-with-text3.png" alt="Storyboard" height="80">
+    <img src="Assets/StoryBoard.jpg" alt="Storyboard" height="80">
   </a>
   <br/>
   <h3 align="center">
@@ -74,7 +74,7 @@ Sehingga penelitian ini dapat memberikan manfaat sebagai berikut :
 ### 3.1 Sumber Data
 <p align='center'>
 <a href="#" align='center'>
-    <img src="https://camo.githubusercontent.com/77e4a074311b53e10682a43b1385ca71ca7701136dcd9817602be08ff50c2ffe/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313439353433343934323231342d3962353235626261373465393f69786c69623d72622d312e322e3126697869643d65794a6863484266615751694f6a45794d446439266175746f3d666f726d6174266669743d63726f7026773d3133353026713d3830" alt="Storyboard" height="200">
+    <img src="https://camo.githubusercontent.com/77e4a074311b53e10682a43b1385ca71ca7701136dcd9817602be08ff50c2ffe/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313439353433343934323231342d3962353235626261373465393f69786c69623d72622d312e322e3126697869643d65794a6863484266615751694f6a45794d446439266175746f3d666f726d6174266669743d63726f7026773d3133353026713d3830" alt="Storyboard" height="300">
   </a>
 <p/>
 
