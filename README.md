@@ -136,6 +136,7 @@ Data dalam penelitian ini bersumber dari Github <a href='https://github.com/rfor
 - Tujuan Awal Data : Data ini dikhususkan untuk analisis metada lagu di platform spotify. Data ini dikumpulkan pada `21 Januari 2020` oleh tidytuesday.
 
 - Jumlah Variabel : Dataset ini mencakup 23 variabel yang berisi fitur audio, metadata, dan popularitas lagu. Dictionary data spotify ini adalah sebagai berikut.
+
 |variable                 |class     |
 |:---|:---|
 |track_id                 |character |
