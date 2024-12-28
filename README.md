@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="#">
-    <img src="Assets/StoryBoard.jpg" alt="Storyboard" height="500">
+    <img src="Assets/StoryBoard.jpeg" alt="Storyboard" height="500">
   </a>
   <br/>
   <h3 align="center">
@@ -11,21 +11,25 @@
   <br/>
 </p>
 
+## Tim dan Collab Link
+<div>
+Analisis Big Data C
+
+- Rosydan Amru Tamam (202110370311249)
+- Muhammad Zidan Rifardi (202110370311268)
+- Bayu Puspito Aji (202110370311291)
+
+Notebook Link : <a href="https://colab.research.google.com/drive/129Msx9kR-mPL3KA-9-cDH3H5LZzYZA_d?usp=drive_link">Click Here<a/>
+<div/>
+
 <!--Daftar Isi-->
 ## Daftar Isi
 
-* [About](#about)
-* [The Problem](#the-problem)
-* [Our Solution - KnowMore](#our-solution---knowmore)
-* [Workflow](#workflow)
-* [Using KnowMore](#using-knowmore)
-* [Using the Source Code](#using-the-source-code)
-* [Reporting issues and contributing](#reporting-issues-and-contributing)
-* [Cite us](#cite-us)
-* [FAIR practices](#fair-practices)
-* [License](#license)
-* [Team](#team)
-* [Acknowledgements](#acknowledgements)
+* [Pendahuluan](##pendahuluan)
+* [Package yang Diperlukan](##package-yang-diperlukan)
+* [Data Preparation](##data-preparation)
+* [Eksplorasi dan Analisa Data](##eksplorasi-dan-analisa-data)
+* [Kesimpulan](##kesimpulan)
 <br><br>
 
 <!--PENDAHULUAN-->
@@ -305,34 +309,9 @@ Berikut merupakan visualisasi dari korelasi antara energy dan loudness.
     <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (all)" height="500">
 </a>
 
-2. Energy vs Loudness by genre (pop) <br>
+2. Energy vs Loudness by genre (each) <br>
 <a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (pop)" height="500">
-</a>
-
-3. Energy vs Loudness by genre (rap) <br>
-<a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (rap)" height="500">
-</a>
-
-4. Energy vs Loudness by genre (rock) <br>
-<a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (rock)" height="500">
-</a>
-
-5. Energy vs Loudness by genre (latin) <br>
-<a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (latin)" height="500">
-</a>
-
-6. Energy vs Loudness by genre (r&b) <br>
-<a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (r&b)" height="500">
-</a>
-
-7. Energy vs Loudness by genre (edm) <br>
-<a>
-    <img src="Assets/EvsL(all).png" alt="Energy vs Loudness (edm)" height="500">
+    <img src="Assets/EvsL(each).png" alt="Energy vs Loudness (each)" height="500">
 </a>
 
 Hubungan Umum:
@@ -394,6 +373,151 @@ p-value: 0.000
 
 #### 2. Seberapa signifikan pengaruh penggunaan instrumen akustik terhadap tingkat energi lagu, dan bagaimana variasinya berdasarkan era/tahun rilis musik?
 
+Korelasi antar energy dan accousticness dalam trend per tahun :
+|Tahun  |Correlation_score     |
+|:---|:---|
+|1957            |-1.000000|
+|1958            |Nan|
+|1959            |Nan|
+|1960            |0.780188|
+|1961            |Nan|
+|1962            |Nan|
+|....            |........|
+|2016            |-0.546348|
+|2017            |-0.522047|
+|2018            |-0.587997|
+|2019            |-0.545316|
+|2020            |-0.580525|
 
+Tahun Awal (1957-1962):
+- Pada tahun 1957, korelasi antara energy dan acousticness adalah -1.000, menunjukkan hubungan negatif sempurna. Artinya, semua lagu pada tahun tersebut menunjukkan bahwa semakin tinggi energi, semakin rendah acousticness, dan sebaliknya.
+- Tahun 1958 dan beberapa tahun lain memiliki nilai NaN. Hal ini mungkin terjadi karena jumlah data pada tahun tersebut terlalu sedikit atau bahkan tidak ada data untuk menghitung korelasi.
+
+Tahun Modern (2016-2020):
+- Korelasi negatif tetap ada, dengan nilai berkisar antara -0.522 hingga -0.580. Hal ini menunjukkan bahwa tren hubungan negatif antara energy dan acousticness terus berlanjut di era modern.
+- Tahun 2020 menunjukkan korelasi negatif yang cukup kuat (-0.580), mengindikasikan bahwa lagu-lagu dengan elemen akustik cenderung memiliki energi yang lebih rendah dibandingkan lagu-lagu dengan elemen elektronik.
+
+#### Visualisasi
+
+Berikut merupakan visualisasi dari korelasi antara energy dan acousticness dalam trend per tahun.
+
+1. Energy vs Loudness by genre (all) <br>
+<a>
+    <img src="Assets/EvsA(all).png" alt="Energy vs Acousticness (all)" height="500">
+</a>
+
+2. Energy vs Loudness by genre (each) <br>
+<a>
+    <img src="Assets/EvsA(each).png" alt="Energy vs Acousticness (each)" height="500">
+</a>
+
+Hubungan Umum:
+- Terdapat korelasi negatif yang kuat antara energy dan acousticness
+Semakin tinggi acousticness, semakin rendah energy (dan sebaliknya)
+- Pola ini konsisten di semua era waktu (1965-2010)
+
+Pola berdasarkan Tahun:
+- Lagu-lagu era 2010 (warna kuning) mendominasi area energy tinggi dan acousticness rendah
+- Lagu-lagu era 1965-1980 (warna biru tua) lebih tersebar merata
+- Era 1995 (warna cyan) menunjukkan transisi dari musik akustik ke digital
+- Terdapat gradasi warna yang menunjukkan evolusi karakteristik musik dari waktu ke waktu
+
+Implikasi untuk Penelitian:
+- Mendukung RQ2 tentang evolusi karakteristik musik seiring waktu
+- Menunjukkan pergeseran preferensi produksi musik
+- Memberikan insight tentang standardisasi produksi musik modern
+
+#### Regression with Year Control
+
+|Cross-Validation_Score  |0.182 (+/- 0.209)|
+|:---|:---|
+
+Cross-validation Mean Score: Nilai rata-rata dari cross-validation adalah 0.182, menunjukkan bahwa model linear regression mampu menjelaskan sekitar 18.2% variasi dalam energi lagu berdasarkan acousticness dan tahun. Ini menunjukkan bahwa hubungan antara energi lagu dengan acousticness dan tahun memang ada, namun kontribusinya terhadap energi relatif kecil.
+
+Cross-validation Standard Deviation: Nilai deviasi standar sebesar ±0.209 menunjukkan bahwa performa model bervariasi cukup signifikan di antara fold dalam cross-validation. Artinya, model ini memiliki stabilitas yang tidak konsisten, mungkin karena pengaruh data yang tidak seragam antar fold.
+
+<div/>
+<br>
+
+<!--KESIMPULAN-->
+## Kesimpulan
+<div align='justify'>
+
+### 5.1 Summary Table
+Kesimpulan berdasarkan genre :
+|Playlist_genre  |Energy     |Loudness     |Acousticness     |
+|:---|:---|:---|:---|
+|edm             |0.802|-5.427|0.082|
+|latin           |0.708|-6.264|0.211|
+|pop             |0.701|-6.315|0.171|
+|r&b             |0.591|-7.865|0.260|
+|rap             |0.651|-7.043|0.193|
+|rock            |0.733|-7.589|0.145|
+
+Energy:
+- EDM memiliki tingkat energi rata-rata tertinggi (0.802), diikuti oleh rock (0.733) dan latin (0.708). Hal ini menunjukkan bahwa genre seperti EDM dan rock cenderung memiliki karakteristik yang energik, sesuai dengan kebutuhan mereka untuk menciptakan suasana yang dinamis dan penuh semangat.
+- R&B memiliki energi rata-rata terendah (0.591), mencerminkan karakteristik musik yang lebih santai dan emosional.
+
+Loudness:
+- Rock memiliki tingkat loudness rata-rata paling rendah (-7.589), diikuti oleh R&B (-7.865). Ini menunjukkan bahwa meskipun rock memiliki energi tinggi, loudness-nya sedikit lebih rendah, yang mungkin disebabkan oleh dinamika musiknya.
+- EDM dan latin memiliki loudness yang lebih tinggi (-5.427 dan -6.264), mencerminkan produksi musik yang fokus pada intensitas suara.
+
+Acousticness:
+- Genre dengan tingkat acousticness tertinggi adalah R&B (0.260) dan latin (0.211), menunjukkan bahwa elemen akustik seperti instrumen tradisional atau vokal natural lebih sering digunakan.
+- EDM memiliki acousticness terendah (0.082), yang sesuai dengan penggunaan alat elektronik dan sintesis dalam produksinya.
+<br><br>
+
+Kesimpulan berdasarkan Tahun (Last 5 years) :
+|Tahun  |Energy     |Loudness     |Acousticness     |
+|:---|:---|:---|:---|
+|2016             |0.696|-6.237|0.171|
+|2017           |0.683|-6.430|0.193|
+|2018             |0.675|-6.552|0.210|
+|2019             |0.697|-6.296|0.190|
+|2020             |0.670|-6.759|0.208|
+
+Energy:
+- Tingkat energi tetap cukup stabil selama 5 tahun terakhir, dengan sedikit penurunan pada tahun 2020 (0.670). Hal ini mungkin mencerminkan tren musik yang lebih tenang atau fokus pada suasana tertentu dalam beberapa tahun terakhir.
+
+Loudness:
+- Loudness menunjukkan sedikit penurunan dari tahun ke tahun, dengan tahun 2020 memiliki loudness terendah (-6.759). Penurunan ini mungkin terkait dengan teknik produksi modern seperti "dynamic range compression" yang semakin disesuaikan dengan preferensi pendengar.
+
+Acousticness:
+- Tingkat acousticness meningkat sedikit pada tahun 2020 (0.208). Ini bisa mencerminkan kembalinya popularitas elemen akustik dalam musik modern.
+
+### 5.2 Final Consolidated Results
+
+#### Research Question 1 Results:
+- Korelasi Energy-Loudness kuat dan positif (0.677)
+- Genre mempengaruhi hubungan secara signifikan (F=1045.99)
+- Model menjelaskan 45.8% dari varians
+
+#### Research Question 2 Results:
+- Korelasi Energy-Acousticness kuat dan negatif (-0.540)
+- Time-controlled model accuracy: 18.2%
+- Analisis mencakup beberapa tahun: 1957 - 2020
+
+### 5.3 Kesimpulan Rumusan Masalah
+
+#### 1."Bagaimana pengaruh tingkat energi lagu terhadap loudness pada berbagai genre musik di Spotify, dan apakah hubungan ini konsisten di semua genre?"
+
+Berdasarkan hasil analisis:
+
+- Terdapat korelasi positif yang kuat antara tingkat energi lagu dan loudness sebesar 0.677. Lagu dengan energi tinggi cenderung memiliki loudness yang lebih besar.
+- Hubungan ini tidak konsisten di semua genre, karena genre memiliki pengaruh signifikan terhadap hubungan tersebut (F-statistik = 1045.99).
+- Model yang digunakan mampu menjelaskan 45.8% dari varians, menunjukkan bahwa faktor lain, seperti elemen musik tambahan atau dinamika produksi, turut berkontribusi.
+
+#### 2."Seberapa signifikan pengaruh penggunaan instrumen akustik terhadap tingkat energi lagu, dan bagaimana variasinya berdasarkan era/tahun rilis musik?"
+
+Hasil analisis menunjukkan bahwa:
+
+- Terdapat korelasi negatif yang kuat antara penggunaan instrumen akustik (acousticness) dan tingkat energi lagu sebesar -0.540, yang berarti semakin tinggi dominasi instrumen akustik, semakin rendah energi lagunya.
+- Hubungan ini relatif konsisten sepanjang era, dengan model time-controlled menunjukkan akurasi sebesar 18.2%, yang mengindikasikan bahwa perubahan waktu hanya memiliki pengaruh kecil terhadap hubungan ini.
+- Analisis mencakup rentang waktu yang luas, yakni dari 1957 hingga 2020, yang menunjukkan bahwa tren tersebut stabil di berbagai era.
+
+#### Rangkuman Umum
+- Energi lagu berhubungan positif dengan loudness, tetapi hubungan ini dipengaruhi oleh karakteristik genre musik.
+- Penggunaan instrumen akustik cenderung mengurangi tingkat energi lagu secara konsisten di berbagai era musik.
+- Penelitian ini menyoroti bahwa karakteristik teknis lagu seperti energy, loudness, dan acousticness sangat dipengaruhi oleh genre dan era, memberikan wawasan penting dalam analisis tren musik.
 <div/>
 <br>
