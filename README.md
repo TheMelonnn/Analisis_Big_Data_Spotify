@@ -25,11 +25,11 @@ Notebook Link : <a href="https://colab.research.google.com/drive/129Msx9kR-mPL3K
 <!--Daftar Isi-->
 ## Daftar Isi
 
-* [Pendahuluan](##pendahuluan)
-* [Package yang Diperlukan](##package-yang-diperlukan)
-* [Data Preparation](##data-preparation)
-* [Eksplorasi dan Analisa Data](##eksplorasi-dan-analisa-data)
-* [Kesimpulan](##kesimpulan)
+* [Pendahuluan](#pendahuluan)
+* [Package yang Diperlukan](#package-yang-diperlukan)
+* [Data Preparation](#data-preparation)
+* [Eksplorasi dan Analisa Data](#eksplorasi-dan-analisa-data)
+* [Kesimpulan](#kesimpulan)
 <br><br>
 
 <!--PENDAHULUAN-->
