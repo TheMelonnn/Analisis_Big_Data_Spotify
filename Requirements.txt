@@ -1,0 +1,19 @@
+*Python - 3.10
+
+*Pandas - Latest
+pip install pandas
+
+*Numpy - Latest
+pip install numpy
+
+*Seaborn - Latest
+pip install seaborn
+
+*Matplotlib - Latest
+pip install matplotlib
+
+*Sklearn - Latest
+pip install sklearn
+
+*Scipy - Latest
+pip install scipy
